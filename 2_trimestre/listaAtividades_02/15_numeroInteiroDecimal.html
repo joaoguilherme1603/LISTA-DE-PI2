@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
+    const num= Number(prompt('informe o numero inteiro'))
+   
 
-
-    //PROCESSAMENTO
-
-    
+   //PROCESSAMENTO
+   if(Number.isInteger(num)){
+       alert("o numero é inteiro")
+   }
+   else if(!Number.isInteger(num)){
+       alert('o numero é decimal')
+   }
+   else{
+       alert('valor inválido')   
+   }
     //SAÍDA
 
 

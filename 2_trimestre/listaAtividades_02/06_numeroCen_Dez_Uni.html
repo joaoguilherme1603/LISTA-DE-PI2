@@ -11,12 +11,39 @@
     */
 
     //ENTRADA
+    
+    let num= Number(prompt('informe o numero  menor que 1000'))
+    let mensagem = "O número tem:";
+    let cem = 0;
+    let dez = 0;
 
 
     //PROCESSAMENTO
 
-    
+if (num > 0 && num < 1000) {
+    cem = Math.floor(num / 100);
+    num = num % 100;
+    dez = Math.floor(num / 10);
+    num = num % 10;
+}
+else {
+    alert('Valor inválido');
+}
+
+if (cem > 0) {
+    mensagem = mensagem + cem + " centenas;" 
+}
+if (dez > 0) {
+    mensagem = mensagem + dez + "dezenas;" 
+}
+if (num > 0) {
+    mensagem = mensagem + num + " unidades."
+}
+
+alert(mensagem)
+
     //SAÍDA
 
+   
 
 </script>

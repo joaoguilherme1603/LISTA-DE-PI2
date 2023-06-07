@@ -5,10 +5,34 @@
     */
 
     //ENTRADA
+    let numero1 = Number(prompt`bote o primeiro número:`);
+    let numero2 = Number(prompt`bote o segundo número:`);
+    let numero3 = Number(prompt`bote o terceiro número:`);
 
+    let maior, meio, menor; 
     
     //PROCESSAMENTO
-    
+    if (numero1 >= numero2 && numero1 >= numero3){
+        if (numero2 >= numero3) {
+      alert("Ordem decrescente: " + numero1 + ", " + numero2 + ", " + numero3);
+    } else {
+      alert("Ordem decrescente: " + numero1 + ", " + numero3 + ", " + numero2);
+    }
+  } else if (numero2 >= numero1 && numero2 >= numero3) {
+    if (numero1 >= numero3) {
+      alert("Ordem decrescente: " + numero2 + ", " + numero1 + ", " + numero3);
+    } else {
+      alert("Ordem decrescente: " + numero2 + ", " + numero3 + ", " + numero1);
+    }
+  } else {
+    if (numero1 >= numero2) {
+      alert("Ordem decrescente: " + numero3 + ", " + numero1 + ", " + numero2);
+    } else {
+      alert("Ordem decrescente: " + numero3 + ", " + numero2 + ", " + numero1);
+    }
+  }
+
     //SAÍDA
     
 </script>
+

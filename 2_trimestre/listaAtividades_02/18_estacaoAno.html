@@ -6,9 +6,40 @@
     */
 
     //ENTRADA
-
+    const hemisferio= prompt('informe em que hemisfério voce está')
+    const mes= Number(prompt('informe o mês que estamos'))
 
     //PROCESSAMENTO
+  if(hemisferio == "norte"){
+    if(mes >=3 && mes <= 5){
+        alert("estamos na primavera")
+    }
+    else if(mes>=6 && mes <=8){
+        alert('estamos no verão')
+    }
+    else if(mes>=9 && mes<=11){
+        alert('estamos no outono')
+    }
+    else{
+        alert('estamos no inverno')
+    }
+  }
+  else if(hemisferio == "sul"){
+    if(mes >=3 && mes <= 5){
+        alert('estamos no outono')
+    }
+    else if( mes >= 6 && mes <=8){
+        alert("estamos no inverno")
+    }
+    else if( mes>= 9 && mes<= 11 ){
+        alert('estamos na primavera')
+    }
+    else{
+        alert('estamos no verão')
+    }
+  }
+
+   
 
     
     //SAÍDA

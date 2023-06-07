@@ -6,10 +6,15 @@
     */
 
     //ENTRADA
-
+    let inteiro1 = Number(prompt(`Informe o primeiro número inteiro`).trim());
+    let inteiro2 = Number(prompt(`Informe o segundo múmero inteiro`).trim());
     //PROCESSAMENTO
-
+    alert("Valores antes da troca:\ninteiro 1: " + inteiro1 + "\ninteiro 2: " + inteiro2);
+    let temp = inteiro1;
+    inteiro1 = inteiro2;
+    inteiro2 = temp;
     //SAÍDA
+    alert("Valores depois  da troca:\ninteiro 1:" + inteiro1 + "\ninteiro2:" + inteiro2);
 
     
 </script>

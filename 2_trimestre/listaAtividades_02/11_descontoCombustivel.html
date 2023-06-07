@@ -14,9 +14,28 @@
     */
 
     //ENTRADA
-
-
+    const alcool=Number(prompt('informe quantos litros deseja'))
+    const gasolina=Number(prompt('informe quantos litros deseja da gasolina'))
+    const descontoG= Number(gasolina*6.50)-(gasolina*6.50*0.04)
+    const descontoG2= Number(gasolina*6.50)-(gasolina*6.50*0.06)
+    const descontoA= Number(alcool*6.10)-(alcool*6.10*0.03)
+    const descontoA2= Number(alcool*6.10)-(alcool*6.10*0.05)
+    
     //PROCESSAMENTO
+    if(alcool <= 20 ){
+        alert(`o valor do litro é de R$ ${descontoA.toFixed(2).replace('.',',')}`)
+    }
+    else if(alcool > 20){
+        alert(`o valor do litro é de R$ ${descontoA2.toFixed(2).replace('.',',')}`)
+    }
+    else if(gasolina <= 20){
+        alert(` o valor do litro é de R$ ${descontoG.toFixed(2).replace('.',',')}`)
+    }
+    else if(gasolina > 20){
+        alert(` o valor do litro é de R$ ${descontoG2.toFixed(2).replace('.',',')}`)
+    }
+
+    
 
     
     //SAÍDA
